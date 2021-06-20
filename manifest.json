@@ -1,8 +1,7 @@
-
 {
-	"name": "CanvasBlocker",
-	"description": "__MSG_addon_description__",
-	"version": "1.6",
+	"name": "Canvas",
+	"description": "part of the mirageid system",
+  "version": "1.6",
 	"icons": {
 		"48": "icons/icon.svg",
 		"96": "icons/icon.svg"
@@ -16,6 +15,7 @@
 			"lib/settingContainers.js",
 			"lib/settingsMigration.js",
 			"lib/settings.js",
+			"lib/settingsAutomator.js",
 			"lib/lists.js",
 			"lib/persistentRndStorage.js",
 			"lib/callingStack.js",
@@ -68,23 +68,7 @@
 			"lib/frame.js"
 		]
 	}],
-	"options_ui": {
-		"browser_style": false,
-		"open_in_tab": true,
-		"page": "options/options.html"
-	},
-	"browser_action": {
-		"browser_style": false,
-		"default_icon": "icons/browserAction-notPrinted.svg",
-		"default_title": "__MSG_browserAction_title_default__",
-		"default_popup": "browserAction/browserAction.html"
-	},
-	"page_action": {
-		"browser_style": false,
-		"default_icon": "icons/pageAction-printed.svg",
-		"default_popup": "pageAction/pageAction.html"
-	},
-	"author": "Korbinian Kapsner",
+	"author": "MirageID (but really Korbinian Kapsner)",
 	"permissions": [
 		"<all_urls>",
 		"storage",
@@ -98,8 +82,7 @@
 	
 	"applications": {
 		"gecko": {
-			"id": "CanvasBlocker@kkapsner.de",
-			"update_url": "https://canvasblocker.kkapsner.de/versions/updates.json",
+			"id": "canvas@mirageid.com",
 			"strict_min_version": "68.0"
 		}
 	},
